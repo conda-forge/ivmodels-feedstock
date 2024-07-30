@@ -1,5 +1,5 @@
 {% set name = "ivmodels" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ivmodels-{{ version }}.tar.gz
-  sha256: 7fcfb66977fc0b2c2cbfbac5c13430092072b77090fec3c9ce0ff300b56c02ee
+  sha256: dce85430cc7b4be7157dde5ef7ee0ceb2bf46b078705b459cd1cdfe69ac14d3a
 
 build:
   noarch: python
