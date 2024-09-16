@@ -35,6 +35,8 @@ requirements:
 test:
   imports:
     - ivmodels
+    - ivmodels.models.kclass
+    - ivmodels.tests
   commands:
     - pip check
   requires:
