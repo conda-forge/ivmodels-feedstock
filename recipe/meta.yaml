@@ -1,5 +1,5 @@
 {% set name = "ivmodels" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ivmodels-{{ version }}.tar.gz
-  sha256: feaebe1acaa45dc6b7aba2532ce65b4ad15115b8272fbed06e09883c57574b4b
+  sha256: 1ee9a86d4e7224d03b52bebfcae24fb7fedcc63e06284de1ab74fee3319071f1
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - scikit-learn
     - glum
     - scipy
+    - numba
   run_constrained:
     - sphinx >=3.0.0,<4.0.0
     - sphinx-autodoc-typehints >=1.11.1,<2.0.0
